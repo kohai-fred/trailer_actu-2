@@ -1,0 +1,56 @@
+@import "../../assets/styles/styles.scss";
+
+.topbar {
+  height: 7rem;
+  background: var(--tmdbDarkBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  a {
+    color: white;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+}
+
+.topbar_content,
+.topbar_content-left,
+.topbar_content-right,
+.topbar_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar_content {
+  width: 100%;
+}
+
+.topbar_content-left {
+  .topbar_logo {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-right: 2rem;
+    background: radial-gradient(var(--tmdbLogoGreen), var(--tmdbLightBlue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .topbar_li {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+}
+
+.topbar_container-translate {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 0.5rem;
+  p {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}

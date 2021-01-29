@@ -6,7 +6,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src/index.js"),
-    movie_detail: path.join(__dirname, "src/movie_detail/movie_detail.js"),
+    movie_detail: path.join(__dirname, "src/app/movie_detail/index.js"),
+    // topbar: path.join(__dirname, "src/app/topbar/topbar.js"),
     api_key: path.join(__dirname, "src/assets/javascripts/api_key.js"),
     // modal: path.join(__dirname, "src/assets/javascripts/modal.js"),
     // burger_menu: path.join(__dirname, "src/assets/javascripts/burger_menu.js"),
@@ -54,9 +55,17 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "movie_detail.html",
-      template: path.join(__dirname, "./src/movie_detail/movie_detail.html"),
+      template: path.join(
+        __dirname,
+        "./src/app/movie_detail/movie_detail.html"
+      ),
       chunks: ["movie_detail", "api_key"],
     }),
+    // new HtmlWebpackPlugin({
+    //   filename: "topbar.html",
+    //   template: path.join(__dirname, "./src/app/topbar/topbar.html"),
+    //   chunks: ["topbar"],
+    // }),
   ],
   stats: "minimal",
   devtool: "source-map",
