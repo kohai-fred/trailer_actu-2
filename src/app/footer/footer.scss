@@ -1,0 +1,13 @@
+@import "../../assets/styles/styles.scss";
+
+.footer {
+  // if move height dont forget move main in _base.scss
+  height: 8rem;
+
+  background: var(--tmdbDarkBlue);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

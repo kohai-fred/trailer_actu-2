@@ -1,6 +1,7 @@
 @import "../../assets/styles/styles.scss";
 
 .topbar {
+  // if move height dont forget move main in _base.scss
   height: 7rem;
   background: var(--tmdbDarkBlue);
   color: white;
